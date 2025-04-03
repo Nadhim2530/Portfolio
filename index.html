@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S Mahammad Nadhim - Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #5f5ff1, #979696);
+            color: rgb(250, 246, 246);
+            overflow-x: hidden;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background: hsla(210, 63%, 81%, 0.8);
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            color: #886038;
+        }
+        .home {
+            display: flex;
+            height: 100vh; /* Full viewport height */
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
+        .home h1 {
+            font-size: 50px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .home p {
+            font-size: 22px;
+            margin-top: 10px;
+        }
+        .btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            background: #345a02;
+            border: none;
+            color: rgb(244, 237, 237);
+            cursor: pointer;
+            transition: 0.3s;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background: #f6f4f3;
+        }
+        .section {
+            padding: 50px;
+            text-align: center;
+            background: #1ab3f0b3;
+            margin: 50px 20px;
+            border-radius: 10px;
+        }
+        .skills, .projects, .interests {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .box {
+            background: #e9eded33;
+            padding: 15px;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: background 0.3s;
+        }
+        .box:hover {
+            background: #eae6e666;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div><a href="#"></a></div>
+        <div>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#Languages">Languages</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+    
+    <section class="home">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Aspiring Software Engineer | Problem Solver | Cloud Enthusiast</p>
+        <button class="btn" onclick="location.href='#about'">Explore My Work</button>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>I am S Mahammad Nadhim, a passionate Computer Science student with a deep interest in problem-solving and software development.</p>
+        <p>My expertise lies in Web Development and Data Structures & Algorithms.</p>
+        <p>I am always eager to learn and explore new technologies to build innovative solutions.</p>
+    </section>
+    
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+        <ul>
+            <li>Web Development</li>
+            <li>Data Structures & Algorithms</li>
+            <li>Artificial Intelligence</li>
+        </ul>
+    </section>
+
+    <section id="Languages" class="section">
+        <h2>Languages</h2>
+        <ul>
+            <li>C</li>
+            <li>Java</li>
+            <li>Python</li>
+            <li>Javascript</li>
+        </ul>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="project">
+            *
+            <h3>Smart Attendance System</h3>
+            <p>A facial recognition-based attendance system that automates attendance tracking using AI.</p>
+            <p>It reduces manual effort, enhances accuracy, and ensures real-time attendance monitoring.</p>
+        </div>
+        *
+        <div class="project">
+            <h3>Online Code Judge</h3>
+            <p>A platform that allows users to practice coding and get instant feedback on their solutions.</p>
+            <p>Supports multiple programming languages and evaluates code efficiency and correctness.</p>
+        </div>
+    </section>
+    
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2023 S Mahammad Nadhim. All rights reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
